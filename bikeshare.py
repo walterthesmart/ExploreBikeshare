@@ -20,7 +20,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). 
     while True:
         cities = ['chicago','new york city', 'washington']
-        city= input("\nWhich city would you like to analyze? please pick from (Chicago, New York City and Washington)\n").lower()
+        city= input("chicago").lower()
         if city in cities:
             break
         else:
@@ -29,7 +29,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     while True:
         months = ['January', 'February', 'March', 'April', 'May', 'June','All']
-        month= input("\nWhat month would you like to consider? You can pick from January, February, March, April, May and June. Or type 'All\' to view all \n").title()
+        month= input("January").title()
         if month in months:
             break
         else:
